@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Photo Map</title>
+        <link rel="stylesheet" href={{url_for('static', filename='css/main.css')}} />
+        <link rel='stylesheet' href={{cdn_css|safe}} type='text/css'/>
+        <script type='text/javascript' src={{cdn_js|safe}}></script>       
+    </head>
+
+    <body> 
+        <div id="bokeh">
+        <ppopup> 
+          {{js|safe}}
+          {{div|safe}}
+        </ppopup>
+        </div>
+        <div id="link">
+          <plink><img id="linkimg" src="static/icons/insta.png" height="30" alt="static/icons/insta.png" width="30"></img></plink>
+          <plink>www.instagram.com/ekh.94</plink>
+        </div>  
+    </body>
+</html>
